@@ -9,21 +9,21 @@ document.addEventListener('DOMContentLoaded', function () {
     // Get the modal
     var newMailModal = new bootstrap.Modal(document.getElementById('new-mail'));
 
-    // Attach a click event listener to the "New Message" link
+   
     newMessageLink.addEventListener('click', function (event) {
-        // Prevent the default link behavior
+     
         event.preventDefault();
 
-        // Show the modal
+   
         newMailModal.show();
     });
 
-    // Add additional JavaScript logic as needed
+
     const replyButton = document.createElement("button");
         replyButton.textContent = "Reply";
         replyButton.classList.add("btn", "btn-primary", " me-2");
         replyButton.addEventListener("click", () => {
-            // Add logic for handling reply action
+
             console.log("Reply clicked");
         });
 });
@@ -58,19 +58,19 @@ function createInboxItem(email) {
 
 var inboxItems = [
     {
-        sender:     "Abraham Lincoln",
-        subject:    "Civil War ",
-        message:    "I think the war will be starting soon but do not be afraid."
-    },
-    {
-        sender:     "Alex Bell",
-        subject:    "Phone",
-        message:    "Can you hear me now?"
+        sender:     "Matt Dillon",
+        subject:    "The Hanging ",
+        message:    "It didn't happen, the rope was to long."
     },
     {
         sender:     "Martyn",
         subject:    "Class",
-        message:    "You are working my brain to much!! I am slow but I get there!"
+        message:    "You are working my brain to much!! I am slow but I get finished"
+    },
+    { 
+        sender:      "Joe Biden",
+        subject:     "Walking ",
+        message:     "Tell me how to walk again, one foot, two foot, FALL!!" 
     },
     {
         sender:     "John Doe",
@@ -78,15 +78,18 @@ var inboxItems = [
         message:    "You don't care anymore."
     },
     {
-        sender:     "Duke Kacz",
-        subject:    "Blackmail?",
-        message:    "You owe me a million!"
+        sender:      "Joe Biden",
+        subject:     "Walking ",
+        message:     "Tell me how to walk, one foot, two foot, fall!!"  
     },
-    {
-        sender:     "Matt Dillon",
-        subject:    "The Hanging",
-        message:    "Well, The rope was to long so it was not a hanging after all!"
+    {   sender:     "Alex Bell",
+        subject:    "Phone",
+        message:    "Can you hear me now?"
+    },  
+    {           
+        sender:     "Duke",
+        subject:    "Blackmail",
+        message:    "Are you going to pay me with 50 pounds of dog food? or no slipper!"
     }
-    
-]  
+]
 inboxItems.forEach(item => createInboxItem(item));

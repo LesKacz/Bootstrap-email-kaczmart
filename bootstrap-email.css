@@ -44,7 +44,7 @@ body {
 }
 
 #offcanvas-menu.show {
-    max-width: calc(100vw - 3rem);
+    max-width: calc(100vw - 2rem);
     background-color: #ccdecc49
 }
 
@@ -144,3 +144,6 @@ body {
 }
 <script src="bootstrap-email.js"> 
 </script>
+@media (700px <=width <= 1000px){}
+@media (min-width:) and 
+(max-width:1000px){}
