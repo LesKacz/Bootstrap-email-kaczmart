@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add additional JavaScript logic as needed
     const replyButton = document.createElement("button");
         replyButton.textContent = "Reply";
-        replyButton.classList.add("btn", "btn-primary", "me-2");
+        replyButton.classList.add("btn", "btn-primary", " me-2");
         replyButton.addEventListener("click", () => {
             // Add logic for handling reply action
             console.log("Reply clicked");
@@ -70,7 +70,7 @@ var inboxItems = [
     {
         sender:     "Martyn",
         subject:    "Class",
-        message:    "I am slow but I get there!"
+        message:    "You are working my brain to much!! I am slow but I get there!"
     },
     {
         sender:     "John Doe",
@@ -83,11 +83,10 @@ var inboxItems = [
         message:    "You owe me a million!"
     },
     {
-        sender:     "Oscar Martinez",
-        subject:    "The real crime",
-        message:    "Well, this is what happened. Ryan’s big project was the website, which wasn’t doing so well. So Ryan, to give the impression of sales, recorded them twice. Once as office sales and once in the website sales, which is what we refer to in the business as 'misleading the shareholders.' Another good term is 'fraud.' The real crime, I think, was the beard"
+        sender:     "Matt Dillon",
+        subject:    "The Hanging",
+        message:    "Well, The rope was to long so it was not a hanging after all!"
     }
     
-]
-
+]  
 inboxItems.forEach(item => createInboxItem(item));

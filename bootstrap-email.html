@@ -14,57 +14,45 @@
 <body>
   <div class="container-fluid">
         <div class="row flex-nowrap flex-grow-1">
-            <!-- Sidebar -->
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                    <a href="#" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <span class="fs-5 d-none d-sm-inline">Folders</span>
+
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+            <a href="#" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <span class="fs-5 d-none d-sm-inline">Folders</span>
+                </a>
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+            <li class="nav-item">
+            <a href="#" class="nav-link align-middle px-0">
+               
+                    <span class="ms-1 d-none d-sm-inline">New Message</span>
                     </a>
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-                                  </svg>
-                                <span class="ms-1 d-none d-sm-inline">New Message</span>
-                            </a>
+                    </li>
+                        <li>
+         <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
+                                    
+            </svg>
+         <span class="ms-1 d-none d-sm-inline">Inbox</span> </a>
                         </li>
                         <li>
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-inboxes" viewBox="0 0 16 16">
-                                       <path d="M4.98 1a.5.5 0 0 0-.39.188L1.54 5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0A.5.5 0 0 1 10 5h4.46l-3.05-3.812A.5.5 0 0 0 11.02 1zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562A.5.5 0 0 0 1.884 9h12.234a.5.5 0 0 0 .496-.438L14.933 6zM3.809.563A1.5 1.5 0 0 1 4.981 0h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 10H1.883A1.5 1.5 0 0 1 .394 8.686l-.39-3.124a.5.5 0 0 1 .106-.374L3.81.563zM.125 11.17A.5.5 0 0 1 .5 11H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124A1.5 1.5 0 0 1 14.117 16H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393zm.941.83.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438l.32-2.562H10.45a2.5 2.5 0 0 1-4.9 0H1.066"/>
-                                    </svg>
-                                      </svg>
-                                   <span class="ms-1 d-none d-sm-inline">Inbox</span> </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bookmark-star" viewBox="0 0 16 16">
-                                    <path d="M7.84 4.1a.178.178 0 0 1 .32 0l.634 1.285a.178.178 0 0 0 .134.098l1.42.206c.145.021.204.2.098.303L9.42 6.993a.178.178 0 0 0-.051.158l.242 1.414a.178.178 0 0 1-.258.187l-1.27-.668a.178.178 0 0 0-.165 0l-1.27.668a.178.178 0 0 1-.257-.187l.242-1.414a.178.178 0 0 0-.05-.158l-1.03-1.001a.178.178 0 0 1 .098-.303l1.42-.206a.178.178 0 0 0 .134-.098z"/>
-                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                                  </svg>
+        <a href="#" class="nav-link px-0 align-middle">
+  
                                 <span class="ms-1 d-none d-sm-inline">Important</span></a>
                         </li>
                         <li>
                             <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-send-arrow-up" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M15.854.146a.5.5 0 0 1 .11.54l-2.8 7a.5.5 0 1 1-.928-.372l1.895-4.738-7.494 7.494 1.376 2.162a.5.5 0 1 1-.844.537l-1.531-2.407L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM5.93 9.363l7.494-7.494L1.591 6.602l4.339 2.76Z"/>
-                                    <path fill-rule="evenodd" d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354a.5.5 0 0 0-.722.016l-1.149 1.25a.5.5 0 1 0 .737.676l.28-.305V14a.5.5 0 0 0 1 0v-1.793l.396.397a.5.5 0 0 0 .708-.708l-1.25-1.25Z"/>
-                                  </svg>
+                               
                                 <span class="ms-1 d-none d-sm-inline">Sent</span></a>
                         </li>
                         <li>
                             <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-                                  </svg>
+                                
                                   <span class="ms-1 d-none d-sm-inline">Draft</span> </a>
                         </li>
                         <li>
                             <a href="#" class="nav-link px-0 align-middle">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-exclamation-octagon" viewBox="0 0 16 16">
+                               
                                     <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z"/>
                                     <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
                                   </svg> 
@@ -74,7 +62,7 @@
                     <hr>
                     <div class="dropdown mt-auto">
                         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                            
                             <span class="d-none d-sm-inline mx-1">Main User</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
@@ -87,7 +75,7 @@
                             <li><a class="dropdown-item" href="#">Sign out</a></li>
                         </ul>
                     </div>
-                </div>
+                 </div>
             </div>
 
             <div class="col-12 col-sm-8 col-md-9 col-lg-4 d-flex flex-column mh-100">
@@ -95,14 +83,14 @@
                     <div class="col d-flex gap-2 g-0">
                         <input type="text" class="flex-grow-1" placeholder="Search mail"/>
                         <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                    </button>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col">
                         <h1 class="mailbox-name">Inbox</h1>
                     </div>
                 </div>
@@ -127,7 +115,7 @@
                         <p>From: <span class="sender">John Smith</span></p>
                         <p>Hey, Are you going to the game Sunday? I hope the Steelers Win.</p>
                         <div class="d-flex mt-2">
-                            <button class="btn btn- me-2">Reply</button> <!-- Red color for Reply button -->
+                            <button class="btn btn- me-2">Reply</button> 
                 <button class="btn btn-private">Forward</button>
                     </div>
 
@@ -142,21 +130,21 @@
                             <button type="button" class="gms-btn gms-lg" data-bs-dismiss="modal">
                                 <span class="material-symbols-outlined">close</span>
                             </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="modal-wrapper">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <form action="#" method="post">
-                                                <div class="modal-body">
-                                                    <div class="form-group">
-                                                        <input
-                                                            name="to"
-                                                            type="email"
-                                                            class="form-control"
-                                                            placeholder="To"
-                                                        />
+                                 </div>
+                                <div class="modal-body">
+                                  <form>
+                                      <div class="modal-wrapper">
+                                 <div class="modal-dialog">
+                                    <div class="modal-content">
+                                         <form action="#" method="post">
+                                             <div class="modal-body">
+                                                <div class="form-group">
+                                                 <input
+                                                     name="to"
+                                                     type="email"
+                                                     class="form-control"
+                                                    placeholder="To"
+                                                     />
                                                     </div>
                                                     <div class="form-group">
                                                         <input
@@ -203,30 +191,31 @@
                                                             class="fa fa-envelope"
                                                         ></i>
                                                         Send Message
- </button>
- </div>
-</form>
-</div></div></div>
- </form>
+                                                            </button>
+                                                                 </div>
+                                                                     </form>
+                                                                    </div>
+                                                                    </div>
+</div>
+                                                                   </form>
  </div> </div></div></div></div></div>
     
- <nav Tahoma-label="Page navigation" class="d-flex justify-content-center">
+ <nav aria-label="Page navigation" class="d-flex justify-content-center">
         <ul class="pagination">
           <li class="page-item disabled">
             <a class="page-link" href="#" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
             </a>
           </li>
-          <li class="page-item active" Tahoma-current="page">
+          <li class="page-item active" arial-current="page">
             <a class="page-link" href="#">1</a>
           </li>
           <li class="page-item"><a class="page-link" href="#">2</a></li>
           <li class="page-item"><a class="page-link" href="#">3</a></li>
           <li class="page-item"><a class="page-link" href="#">4</a></li>
           <li class="page-item"><a class="page-link" href="#">5</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" Tahoma-label="Next">
-              <span Tahoma-hidden="true">&raquo;</span>
+          <li class="page-item"><a class="page-link" href="#" arial-label="Next">
+              <span arial-hidden="true">&raquo;</span>
             </a>
           </li>
         </ul>
@@ -246,7 +235,7 @@
         </div>
     </template>
 
-    <script src="bootstrap-email.js"></script>
     
 </body>
 </html>
+<script src="bootstrap-email.js"></script>
