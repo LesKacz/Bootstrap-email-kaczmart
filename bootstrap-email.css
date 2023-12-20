@@ -1,0 +1,143 @@
+body {
+    background-color: #a3ccf0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.mailbox-name {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.mailbox {
+    background-color: #a9f9c6;
+}
+
+.toolbar{
+    background-color: #fa7c7c;
+}
+
+.toolbar input[type="text"] {
+    min-width: 2;
+}
+
+.gms-btn {
+    display: flex;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.gms-lg {
+    font-size: 3rem;
+}
+
+#offcanvas-menu {
+    padding: 3rem;
+}
+
+#offcanvas-menu.show {
+    max-width: calc(100vw - 4rem);
+    background-color: #ece9ea49
+}
+
+#offcanvas-preview.show {
+    height: calc(100vh - 5rem);
+}
+
+.email-message {
+    min-width: 0;
+    background-color: #f29eda;
+}
+
+.email-message .sender {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.email-message .subject {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.email-message p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    line-height: 1.5;
+    pointer-events: none;
+}
+
+.preview .subject {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.preview .sender {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#new-mail .input-wrap {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+
+#new-mail .input-wrap input {
+    width: 100%;
+    flex-grow: 1;
+}
+
+#new-mail .input-wrap label {
+    color: #767676;
+    margin-right: 2px;
+}
+
+#new-mail input[type="text"] {
+    border: none;
+}
+
+#new-mail input[type="text"]:focus {
+    outline: none;
+}
+
+#new-mail textarea {
+    width: 100%;
+    min-height: 200px;
+    border: none;
+    resize: none;
+    font-size: 14px;
+}
+
+#new-mail textarea:focus {
+    outline: none;
+}
+
+.menu-option {
+    background: none;
+    border: none;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.menu-option span {
+    color: #f5f5f5;
+}
+
+.menu-option:hover span{
+    color: #ccc;
+}
+
+.menu-option.active-mailbox span {
+    color: #808080;
+}
