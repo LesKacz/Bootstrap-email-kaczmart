@@ -78,9 +78,9 @@ var inboxItems = [
         message:    "You don't care anymore."
     },
     {
-        sender:      "Joe Biden",
-        subject:     "Walking ",
-        message:     "Tell me how to walk, one foot, two foot, fall!!"  
+        sender:      "Verizon",
+        subject:     "Phone ",
+        message:     "I can RIP you off. Just sign up and see!!"  
     },
     {   sender:     "Alex Bell",
         subject:    "Phone",
